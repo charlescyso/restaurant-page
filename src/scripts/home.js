@@ -2,7 +2,7 @@ export default function loadHome(coverImage) {
     const mainContent = document.querySelector('.main-content');
     
     mainContent.innerHTML = `
-        <div class=heading-container>
+        <div class='heading-container'>
             <h1>Soul Food!</h1>
             <h2>The best soul found around!</h2>
         </div>
@@ -10,16 +10,15 @@ export default function loadHome(coverImage) {
             <img src='${coverImage}'>
         </div>
         <div class='hours-container'>
-            <p>Hours</p>
+            <h3>Hours</h3>
+            <p>Weekdays: 9:00 a.m. - 9:00 p.m.</p>
+            <p>Weekends: 10:00 a.m. - 8:00 p.m.</p>
         </div>
         <div class='location-container'>
-            <p>Location</p>
+            <h3>Location</h3>
+            <p>504-2415 Yannis St</p>
         </div>
     `;
-    
-    // const cover = document.createElement('img');
-    //     cover.src = coverImage;
-    //     mainContent.appendChild(cover);
-}
+};
 
-console.log('I get called from home.js')
+console.log('I get called from home.js');

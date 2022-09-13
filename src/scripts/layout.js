@@ -1,5 +1,4 @@
 export default function loadLayout() {
-    
     const content = document.querySelector('#content');
     
     // nav bar
@@ -9,15 +8,15 @@ export default function loadLayout() {
         <ul>
             <li class='home-nav'>home</li>
             <li class='menu-nav'>menu</li>
-            <li class='about-nav'>about</li>
+            <li class='contact-nav'>contact</li>
         </ul>
     `;
     content.appendChild(navbar);
 
     // main content
     const mainContent = document.createElement('div');
-    mainContent.classList.add('main-content')
+    mainContent.classList.add('main-content');
     content.appendChild(mainContent);
 }
 
-console.log('I get called from layout.js')
+console.log('I get called from layout.js');
