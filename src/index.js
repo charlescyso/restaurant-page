@@ -12,17 +12,19 @@ import menuItemThree from './images/menu-item3.jpeg'
 import menuItemFour from './images/menu-item4.jpeg'
 
 // load nav bar and home page
-loadLayout()
-loadHome(coverImage)
+loadLayout();
+// loadHome(coverImage);
+
+loadContact() // TEST
 
 document.querySelector('.home-nav').addEventListener('click', () => {
-    loadHome(coverImage)
+    loadHome(coverImage);
+});
+
+document.querySelector('.menu-nav').addEventListener('click', () => {
+    loadMenu(menuItemOne, menuItemTwo, menuItemThree, menuItemFour);
+});
+
+document.querySelector('.contact-nav').addEventListener('click', () => {
+    loadContact()
 })
-
-// document.querySelector('.menu-nav').addEventListener('click', () => {
-//     loadMenu(menuItemOne, menuItemTwo, menuItemThree, menuItemFour)
-// })
-
-// document.querySelector('.contact-nav').addEventListener('click', () => {
-//     loadContact()
-// })
