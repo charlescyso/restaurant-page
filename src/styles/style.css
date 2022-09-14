@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Hussar';
+    src: url('../fonts/HussarBoldWeb-bf92.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-background: hsl(58, 44%, 85%);
+    --clr-background-shade-450: hsl(58, 44%, 90%);
+    --clr-background-shade-500: hsl(58, 44%, 75%);
+
+    --fs-450: 1.5rem;
+    --fs-500: 2rem;
+    --fs-700: 4rem;
+}
+
+/* general styling */
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: var(--clr-background);
+    font-family: 'Hussar';
+}
+h1 {
+    font-size: var(--fs-700);
+}
+h2 {
+    font-size: var(--fs-500);
+}
+h3 {
+    font-size: var(--fs-450);
+}
+
+/* navigation bar container */
+.navbar-container {
+    margin-top: 1rem;
+}
+
+.navbar-container ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: clamp(16rem, 90vw, 70rem);
+    margin: auto;
+    padding: 0.5rem 0;
+    list-style: none;
+    font-size: var(--fs-450);
+    /* border: 1px solid red; */
+    background-color: var(--clr-background-shade-500);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.navbar-container li:hover {
+    color: white;
+    transition: color 0.1s;
+    cursor: pointer;
+}
+
+/* heading container */
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: clamp(16rem, 90vw, 70rem);
+    margin: auto;
+    padding: 2rem 0;
+    background-color: var(--clr-background-shade-450);
+    /* border: 1px solid red; */
+    font-weight: bold;
+}
+
+.heading-container h2 {
+    font-weight: normal;
+}
+
+/* footer container */
+.footer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+}
+
+/* utility */
+.active-page {
+    color: hsl(0, 0%, 100%);
+    text-decoration-line: underline;
+}

@@ -14,11 +14,12 @@ export default function loadContact() {
             </div>
             <div class='form-group'>
                 <label for='message'>Message:</label>
-                <input type='textarea' id='message'></input>
+                <textarea rows='4' id='message'></textarea>
             </div>
                 <input type='submit'>
             </form>
         </div>
+        <div class='footer-container'>Made by Charles So</div>
     `;
 };
 

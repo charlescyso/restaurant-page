@@ -21,8 +21,7 @@ export default function loadHome(coverImage) {
                 <p>Wallabee, BC V3T2W1</p>
             </div>
         </div>
-        <div class='footer-container'>
-        </div>
+        <div class='footer-container'>Made by Charles So</div>
     `;
 };
 

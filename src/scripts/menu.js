@@ -26,6 +26,7 @@ export default function loadMenu(menuItemOne, menuItemTwo, menuItemThree, menuIt
             <h3>$3.99</h3>
             <img src='${menuItemFour}'>
         </div>
+        <div class='footer-container'>Made by Charles So</div>
     `;
 };
 

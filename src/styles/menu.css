@@ -1,0 +1,27 @@
+/* menu container */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: clamp(16rem, 90vw, 70rem);
+    margin: auto;
+    padding: 0 1rem;
+    background-color: var(--clr-background-shade-450);
+    text-align: center;
+}
+.menu-container:not(:nth-of-type(2)) {
+    padding-top: 2rem;
+}
+.menu-container:last-of-type {
+    padding-bottom: 2rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.menu-container h3:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.menu-container img {
+    max-width: clamp(16rem, 85vw, 40rem);
+}
